@@ -1,5 +1,6 @@
 package com.natixis.project.service;
 
+import com.natixis.project.customexceptions.ProductNotFoundException;
 import com.natixis.project.entity.Product;
 import com.natixis.project.repository.ProductRepository;
 import org.springframework.stereotype.Service;
@@ -16,7 +17,8 @@ public class ProductService {
     }
 
     public Product getProductById(Long id) {
-        return productRepository.findById(id).orElseThrow(() -> new ProductNotFoundException("Product not found with id: " + id);
+        return productRepository.findById(id)
+                .orElseThrow(() -> new ProductNotFoundException("Product not found with id: " + id));
     }
 
     public List<Product> getAllProducts() {

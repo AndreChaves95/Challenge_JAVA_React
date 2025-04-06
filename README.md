@@ -2,10 +2,22 @@
 
 ### Entity class
 #### Product: 
-- Id
+- Id (Primary Key, Auto-generated)
 - Name
 - Price
 - Description
 
 #### Lombok
 - Use of Lombok library to automatically generate Getter, Setter, HashCode, ToString, etc methods
+
+### Repository Layer
+- ProductRepository extends JPARepository interface provided by Spring Data JPA, that enables to use built-in methods 
+for interacting with the database.
+- @Repository annotation -> to indicate that this class is a repository and should be managed by the Spring container
+
+### Service Layer
+- Use of Dependency injection to be able to use Repository methods
+- @Service annotation -> to indicate class as a service provider and part of business logic layer
+
+### Controller Layer
+- @RestController annotation -> to indicate this class will support HTTP requests

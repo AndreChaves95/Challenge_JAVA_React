@@ -24,3 +24,16 @@ for interacting with the database.
 
 ### Custom Exceptions
 - ProductNotFoundException -> to handle and throw exception errors
+
+## Database
+#### H2 DB
+- Url to access database: http://localhost:8080/h2-console
+
+
+## Requests
+#### POST
+{
+"name": "product1",
+"description": "First product",
+"price": 12.3
+}

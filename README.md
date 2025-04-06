@@ -21,3 +21,6 @@ for interacting with the database.
 
 ### Controller Layer
 - @RestController annotation -> to indicate this class will support HTTP requests
+
+### Custom Exceptions
+- ProductNotFoundException -> to handle and throw exception errors

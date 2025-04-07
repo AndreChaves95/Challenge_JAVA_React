@@ -1,12 +1,10 @@
-import axios from 'axios';
+import ProductList from '../components/ProductList';
 
-const API = axios.create({
-  baseURL: 'http://localhost:8080/api',
-});
-
-export const setAuth = (username, password) => {
-  const token = btoa(`${username}:${password}`);
-  API.defaults.headers.common['Authorization'] = `Basic ${token}`;
-};
-
-export default API;
+export default function ProductPage() {
+  return (
+    <div className="container mt-5">
+      <h2>Product Catalog</h2>
+      <ProductList />
+    </div>
+  );
+}

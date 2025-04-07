@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import InitialPage from './pages/InitialPage';
+import LoginPage from './pages/LoginPage';
+import ProductPage from './pages/ProductPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          React App to Natixis challenge!
-        </p>
-        <a
-          className="Github-link"
-          href="https://github.com/AndreChaves95/Challenge_JAVA_React"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub Repository
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<InitialPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/products" element={<ProductPage />} />
+      </Routes>
+    </Router>
   );
 }
 

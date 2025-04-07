@@ -1,0 +1,13 @@
+services:
+  java-app:
+    container_name: java_springboot_service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+  react-app:
+    container_name: react_service
+    build: ./product-catalog
+    ports:
+      - "3000:3000"

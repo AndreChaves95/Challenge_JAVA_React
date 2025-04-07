@@ -1,5 +1,12 @@
 # JAVA and React Project
 
+## Run Project
+- On docker-compose.yml file run services:
+- Java application will serve on: http://localhost:8080/api/projects
+- React application will serve on: http://localhost:3000/
+
+#### ---------------------------------------------------------------------------------------------
+
 ### Entity class
 #### Product: 
 - Id (Primary Key, Auto-generated)
@@ -8,7 +15,7 @@
 - Description
 
 #### Lombok
-- Use of Lombok library to automatically generate Getter, Setter, HashCode, ToString, etc methods
+- Use of Lombok library to automatically generate Getter, Setter, HashCode, ToString, etc. methods
 
 ### Repository Layer
 - ProductRepository extends JPARepository interface provided by Spring Data JPA, that enables to use built-in methods 
@@ -28,7 +35,6 @@ for interacting with the database.
 ## Database
 #### H2 DB
 - Url to access database: http://localhost:8080/h2-console
-
 
 ## Requests
 #### POST

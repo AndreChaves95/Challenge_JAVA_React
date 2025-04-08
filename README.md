@@ -2,8 +2,11 @@
 
 ## Run Project
 - On docker-compose.yml file run services:
-- Java application will serve on: http://localhost:8080/api/projects
+- Java application will serve on: http://localhost:8080/api/products
 - React application will serve on: http://localhost:3000/
+- Login with:
+  - Username: admin
+  - Password: admin123
 
 #### ---------------------------------------------------------------------------------------------
 
